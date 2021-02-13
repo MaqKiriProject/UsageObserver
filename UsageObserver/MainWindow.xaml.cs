@@ -25,6 +25,9 @@ namespace MaqKiriAppTest
         Point current_Point = new Point(0, 0);
         Point Mouse_Point = new Point(0, 0);
         private bool Mouse_Clicking = false;
+
+        CPUObserver cpuObserver = new CPUObserver();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -52,6 +55,9 @@ namespace MaqKiriAppTest
                 this.Top += Mouse_Point.Y - current_Point.Y;
                 this.Left += Mouse_Point.X - current_Point.X;
             }
+
+            cpuObserver.RefreshCpuUsage();
+            usageBox.Text = cpuObserver.cpuUsage.ToString();
         }
 
         private void Window_MouseUp(object sender, MouseEventArgs e)
