@@ -15,5 +15,7 @@
         <Image HorizontalAlignment="Left" Height="256" Margin="0,0,0,0"
                VerticalAlignment="Top" Width="256" Source="kurumi icon.png"/>
 
+        <TextBox x:Name="usageBox" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="NONE" VerticalAlignment="Top" Width="49" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Margin="118,164,0,0" FontWeight="Bold" FontFamily="Consolas" FontStyle="Italic"/>
+
     </Grid>
 </Window>
