@@ -24,7 +24,7 @@ namespace MaqKiriAppTest
 
         public void RefreshCpuUsage()
         {
-            Thread.Sleep(100);
+            //Thread.Sleep(100);
             cpuUsage = cpuCounter.NextValue();
         }
     }
